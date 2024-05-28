@@ -1,10 +1,12 @@
-body {
+
+   body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estiliza o cabeçalho */
 header {
     background-color: #4CAF50;
     color: white;
@@ -12,25 +14,30 @@ header {
     text-align: center;
 }
 
+/* Remove os marcadores de lista e o preenchimento da lista de navegação */
 nav ul {
     list-style-type: none;
     padding: 0;
 }
 
+/* Exibe os itens da lista de navegação */
 nav ul li {
     display: inline;
     margin: 0 1rem;
 }
 
+/* Estiliza os links de navegação */
 nav ul li a {
     color: white;
     text-decoration: none;
 }
 
+/* Adiciona preenchimento ao conteúdo principal */
 main {
     padding: 1rem;
 }
 
+/* Estiliza o rodapé */
 footer {
     background-color: #4CAF50;
     color: white;
@@ -41,7 +48,9 @@ footer {
     bottom: 0;
 }
 
+/* Estilos para telas com largura máxima de 600px */
 @media (max-width: 600px) {
+    /* Exibe os itens da lista de navegação como blocos com centralização e margens verticais */
     nav ul li {
         display: block;
         text-align: center;
