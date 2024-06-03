@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eHealth</title> <!-- Título da página -->
-    <link rel="stylesheet" href="styles/style.css"> <!-- Link para a folha de estilos CSS -->
+    <title>eHealth</title>
+    <link rel="stylesheet" href="styles/contato.css">
 </head>
 <body>
     <!-- Cabeçalho da página -->
     <header>
-        <h1>Home</h1> <!-- Título principal da página -->
-        <!-- Navegação do site -->
+        <h1>Contact</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -22,10 +21,26 @@
     </header>
     <!-- Conteúdo principal da página -->
     <main>
-        <section>
-            <h2>O que é Saúde Digital?</h2> 
-            <p>A Saúde Digital é um campo emergente que envolve o uso de tecnologias digitais para melhorar a saúde e o bem-estar das pessoas.</p> 
-            <img src="images/saude_digital.jpg" alt="Saúde Digital"> 
+        <section class="contact-form-section">
+            <h2>Contact!</h2>
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Full Name">
+                    <input type="email" id="email" name="email" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                </div>
+                <div class="form-group centered">
+                    <label>
+                        <input type="checkbox" name="not-a-robot">
+                        I'm Human 😊, What does it mean to be Human..?
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Send Message">
+                </div>
+            </form>
         </section>
     </main>
     <!-- Rodapé da página -->

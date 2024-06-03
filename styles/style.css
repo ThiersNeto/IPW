@@ -1,5 +1,4 @@
-
-   body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -14,6 +13,7 @@ header {
     text-align: center;
 }
 
+/* Estiliza o link ativo na navegação */
 nav ul li a.highlight {
     background-color: #0D1321;
     border-radius: 5px;
@@ -55,6 +55,7 @@ footer {
     bottom: 0;
 }
 
+/* Estiliza o conteúdo do rodapé */
 .footer-content {
     display: flex;
     justify-content: center;
@@ -62,17 +63,20 @@ footer {
     padding-bottom: 20px;
 }
 
+/* Adiciona margens aos elementos do rodapé */
 .footer-left, .footer-right {
     margin: 0 20px;
 }
 
+/* Estiliza a linha separadora no rodapé */
 .footer-separator {
     width: 1px;
-    height: 50px; /* Ajuste conforme necessário */
+    height: 50px;
     background-color: #333;
     margin: 0 20px;
 }
 
+/* Adiciona margens aos parágrafos no rodapé */
 .footer-left p, .footer-right p {
     margin: 5px 0;
 }
