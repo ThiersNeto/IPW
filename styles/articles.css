@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: whitesmoke;
+  background-color: #f0f0f0;
   color: #333;
   display: flex;
   flex-direction: column;
@@ -39,76 +39,41 @@ nav ul li a:hover, nav ul li a.highlight {
 
 main {
   flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 
-.contact-form-section {
+.intro {
   text-align: center;
+  margin-bottom: 2rem;
+}
+
+.articles-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.article {
   background-color: white;
-  padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  max-width: 300px;
+}
+
+.article img {
   width: 100%;
-  max-width: 500px;
+  height: auto;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.article h3 {
+  margin: 0.5rem 0;
 }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.form-group input, .form-group textarea {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  color: #333;
-}
-
-textarea {
-  resize: none;
-  height: 150px;
-}
-
-input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-.centered {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-}
-
-.centered input[type="checkbox"] {
-  margin: 0;
-}
-
-label {
-  color: #555;
-  margin: 0;
+.article p {
+  padding: 0 1rem 1rem;
 }
 
 footer {
@@ -124,7 +89,6 @@ footer {
 .footer-content {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .footer-left, .footer-right {

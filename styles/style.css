@@ -3,9 +3,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
-/* Estiliza o cabeçalho */
 header {
     background-color: #0D1321;
     color: white;
@@ -13,62 +14,113 @@ header {
     text-align: center;
 }
 
-/* Estiliza o link ativo na navegação */
-nav ul li a.highlight {
-    background-color: #0D1321;
-    border-radius: 5px;
-    padding: 5px 10px;
-}
-
-/* Remove os marcadores de lista e o preenchimento da lista de navegação */
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
-/* Exibe os itens da lista de navegação */
-nav ul li {
-    display: inline;
-    margin: 0 1rem;
-}
-
-/* Estiliza os links de navegação */
 nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
 }
 
-/* Adiciona preenchimento ao conteúdo principal */
+nav ul li a:hover, nav ul li a.highlight {
+    background-color: #4CAF50;
+}
+
 main {
-    padding: 1rem;
+    padding: 2rem 1rem;
 }
 
-/* Estiliza o rodapé */
+.intro {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.intro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.benefits, .technologies, .cta {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.benefits ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.tech-item {
+    flex: 1 1 calc(33% - 1rem);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.tech-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cta {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #0D1321;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #4CAF50;
+}
+
 footer {
     background-color: #0D1321;
     color: white;
     text-align: center;
     font-size: 18px;
     padding: 20px 0;
-    position: fixed;
     width: 100%;
-    bottom: 0;
+    position: relative;
 }
 
-/* Estiliza o conteúdo do rodapé */
 .footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
 }
 
-/* Adiciona margens aos elementos do rodapé */
 .footer-left, .footer-right {
     margin: 0 20px;
 }
 
-/* Estiliza a linha separadora no rodapé */
 .footer-separator {
     width: 1px;
     height: 50px;
@@ -76,17 +128,6 @@ footer {
     margin: 0 20px;
 }
 
-/* Adiciona margens aos parágrafos no rodapé */
 .footer-left p, .footer-right p {
     margin: 5px 0;
-}
-
-/* Estilos para telas com largura máxima de 600px */
-@media (max-width: 600px) {
-    /* Exibe os itens da lista de navegação como blocos com centralização e margens verticais */
-    nav ul li {
-        display: block;
-        text-align: center;
-        margin: 0.5rem 0;
-    }
 }
