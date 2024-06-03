@@ -8,10 +8,16 @@
 
 /* Estiliza o cabeçalho */
 header {
-    background-color: #4CAF50;
+    background-color: #0D1321;
     color: white;
     padding: 1rem;
     text-align: center;
+}
+
+nav ul li a.highlight {
+    background-color: #0D1321;
+    border-radius: 5px;
+    padding: 5px 10px;
 }
 
 /* Remove os marcadores de lista e o preenchimento da lista de navegação */
@@ -39,13 +45,36 @@ main {
 
 /* Estiliza o rodapé */
 footer {
-    background-color: #4CAF50;
+    background-color: #0D1321;
     color: white;
     text-align: center;
-    padding: 0.5rem;
+    font-size: 18px;
+    padding: 20px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.footer-left, .footer-right {
+    margin: 0 20px;
+}
+
+.footer-separator {
+    width: 1px;
+    height: 50px; /* Ajuste conforme necessário */
+    background-color: #333;
+    margin: 0 20px;
+}
+
+.footer-left p, .footer-right p {
+    margin: 5px 0;
 }
 
 /* Estilos para telas com largura máxima de 600px */
