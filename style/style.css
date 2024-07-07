@@ -71,11 +71,16 @@ header nav ul li a:hover {
 
 main {
     flex: 1;
-    padding-top: 150px;
+    padding-top: 120px;
+    padding-bottom: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify; 
 }
 
 section {
-    text-align: center;
     justify-content: center;
 }
 
@@ -85,7 +90,7 @@ footer {
     text-align: center;
     padding: 10px;
     width: 100%;
-    position: fixed;
+    position: relative;
     bottom: 0;
 }
 
@@ -113,81 +118,83 @@ a:focus {
     header .logo img {
         width: 80px;
     }
+
+    main {
+        padding: 0 10px;
+    }
 }
 
 /* Estilos Específicos da Página Inicial = Index */
 
-body.home .btn-primary {
+.home .btn-primary {
     background-color: #f0a500;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    display: inline-block;
-    margin-top: 20px;
+    display: block;
+    margin: 20px auto;
+    text-align: center; 
+    font-weight: bold;
 }
 
-body.home .btn-primary:hover {
+.home .btn-primary:hover {
     background-color: #d48800;
 }
 
-body.home #features {
-    text-align: center;
+.home #features {
+    text-align: left;
     padding: 50px 20px;
 }
 
-body.home .feature-item {
+.home .feature-item {
     margin-bottom: 30px;
+    text-align: justify;
 }
 
-body.home .feature-item h3 {
+.home .feature-item h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
 /* Estilos Específicos da Página Sobre */
-body.about h1 {
+.about h1 {
     text-align: center;
     margin-top: 100px;
 }
 
-body.about h2 {
+.about h2 {
     margin-top: 50px;
 }
 
-body.about .team-member {
+.about .team-member {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-body.about .team-member img {
+.about .team-member img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin-right: 20px;
 }
 
-body.about .team-member h3 {
+.about .team-member h3 {
     margin: 0;
 }
 
-body.about .team-member p {
+.about .team-member p {
     margin: 0;
 }
 
 /* Estilos Específicos da Página do Blog */
-
-body.blog .blog-post {
-    text-align: center;
+.blog .blog-post {
+    text-align: justify;
     justify-content: center;
 }
 
 /* Adições para centralização de texto e espaçamento */
-body {
-    text-align: center;
-}
-
 .container-centralizada {
     display: flex;
     flex-direction: column;
@@ -199,14 +206,20 @@ body {
 
 .container-centralizada h1, .container-centralizada h2 {
     margin: 20px 0;
+    text-align: center;
 }
 
 .container-centralizada p {
     margin: 10px 0;
     max-width: 800px;
-    text-align: justify;
+    text-align: justify; 
 }
 
 .container-centralizada footer {
     margin-top: 20px;
+}
+
+.home h1 {
+    text-align: center;
+    font-weight: bold;
 }
