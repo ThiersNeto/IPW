@@ -183,3 +183,30 @@ body.blog .blog-post {
     justify-content: center;
 }
 
+/* Adições para centralização de texto e espaçamento */
+body {
+    text-align: center;
+}
+
+.container-centralizada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container-centralizada h1, .container-centralizada h2 {
+    margin: 20px 0;
+}
+
+.container-centralizada p {
+    margin: 10px 0;
+    max-width: 800px;
+    text-align: justify;
+}
+
+.container-centralizada footer {
+    margin-top: 20px;
+}
